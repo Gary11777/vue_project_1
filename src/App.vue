@@ -6,6 +6,7 @@
     <router-link to="/about">About</router-link>
     <router-link to="/contact">Contact</router-link>
     <router-link to="/composable">Composable</router-link>
+    <router-link to="/e21">e21</router-link>
   </nav>
   
   <router-view />
