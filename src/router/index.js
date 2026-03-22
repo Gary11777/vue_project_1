@@ -4,6 +4,7 @@ import About from '../views/About.vue'
 import Contact from '../views/Contact.vue'
 import Composable from '../views/Composable.vue'
 import e21 from '../views/e21.vue'
+import e22 from '../views/e22.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/e21',
       name: 'e21',
       component: e21,
+    },
+    {
+      path: '/e22',
+      name: 'e22',
+      component: e22,
     },
   ],
 })
