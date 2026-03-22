@@ -5,14 +5,6 @@ let { flash } = useFlash();
 </script>
 
 <template>
-  
-  <!-- <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
-  <p><b>{{ message }}</b></p>
-  <p><input type="text" v-model="message" /></p>
-  <p><button @click="reverseMessage">Reverse Message</button></p> -->
   <main>
     <div>
       <h1>Home Page</h1>

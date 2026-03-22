@@ -7,6 +7,7 @@
     <router-link to="/contact">Contact</router-link>
     <router-link to="/composable">Composable</router-link>
     <router-link to="/e21">e21</router-link>
+    <router-link to="/e22">e22</router-link>
   </nav>
   
   <router-view />
