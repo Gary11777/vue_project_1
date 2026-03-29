@@ -1,9 +1,12 @@
 <script setup>
-import Quiz, { quizData } from '../components/Quiz/Quiz.vue';
+import Quiz from '../components/Quiz/Quiz.vue';
+import { state } from '../router/stores/quizStore';
+
+
 </script>
 
 <template>
     <main>
-        <Quiz :quiz="quizData" />
+        <Quiz :quiz="state" />
     </main>
 </template>
