@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h5>{{ quiz.name }}</h5>
+        <h5>{{ state.name }}</h5>
+        <button @click="state.name = 'A New Quiz'">Change Quiz Name</button>
     </div>
 
     <ul>
@@ -10,17 +11,5 @@
 </template>
 
 <script setup>
-import { inject } from 'vue';
-
-defineProps({
-    quiz: {
-        type: Object,
-        required: true,
-    },
-});
-
-
-/** Ref from Quiz.vue (template auto-unwraps refs) */
-let quizName = inject('quiz');
-
+import { state } from '../../router/stores/quizStore';
 </script>
