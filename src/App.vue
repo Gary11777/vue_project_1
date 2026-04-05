@@ -30,4 +30,8 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+
+nav a.router-link-exact-active {
+  color: #333;
+}
 </style>
