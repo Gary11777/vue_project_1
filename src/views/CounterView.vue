@@ -1,5 +1,7 @@
 <script setup>
-import { counter } from '../router/stores/counterStore';
+import { useCounterStore } from '@/router/stores/CounterStore';
+
+let counter = useCounterStore();
 </script>
 
 <template>
@@ -8,7 +10,15 @@ import { counter } from '../router/stores/counterStore';
             {{ counter.count }}
         </h2>
         <button @click="counter.decrement()">Decrement</button>
-        <button @click="counter.increment()">Increment</button>
+
+        <button 
+        @click="counter.increment()"
+        :disabled="! counter.remaining"
+        >Increment ({{ counter.remaining }} remaining)</button>
+        
         <button @click="counter.reset()">Reset</button>
+        <p :style="{ color: counter.remainingColor }">
+            {{ counter.remainingText }}
+        </p>
     </div>
 </template>

@@ -1,7 +1,8 @@
 <script setup>
-import { counter } from '../router/stores/counterStore';
+import { useCounterStore } from '../router/stores/CounterStore';
 import { useFlash } from '../composables/useFlash';
 
+const counter = useCounterStore();
 let { flash } = useFlash();
 </script>
 
