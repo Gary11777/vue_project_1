@@ -6,6 +6,7 @@ import Composable from '../views/Composable.vue'
 import e21 from '../views/e21.vue'
 import e22 from '../views/e22.vue'
 import CounterView from '../views/CounterView.vue'
+import TeamView from '../views/TeamView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -44,6 +45,11 @@ const router = createRouter({
       path: '/counter-view',
       name: 'CounterView',
       component: CounterView,
+    },
+    {
+      path: '/team-view',
+      name: 'TeamView',
+      component: TeamView,
     },
   ],
 })
