@@ -9,6 +9,7 @@
     <router-link to="/composable">Composable</router-link>
     <router-link to="/e21">e21</router-link>
     <router-link to="/e22">e22</router-link>
+    <router-link to="/team-view">Team View</router-link>
   </nav>
   
   <router-view />
