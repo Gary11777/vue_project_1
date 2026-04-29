@@ -5,7 +5,8 @@ defineProps({
 </script>
 
 <template>
-    <div v-if="show" class="modal-mask">
+    <Transition name="modal">
+        <div v-if="show" class="modal-mask">
         <div class="modal-container">
             <div>
                 <slot name="body">default body</slot>
@@ -17,9 +18,11 @@ defineProps({
             </footer>
         </div>
     </div>
+    </Transition>
 </template>
 
 <style>
+
 .modal-mask {
     position: fixed;
     inset: 0;
@@ -58,4 +61,23 @@ defineProps({
         background-color: #888686;
     }
 }
+
+.modal-enter-active {
+    transition: opacity 0.6s, scale 0.6s;
+}
+
+.modal-leave-active {
+    transition: opacity 0.4s, scale 0.4s;
+}
+
+.modal-enter-from, .modal-leave-to {
+    opacity: 0;
+    scale: 1.25;
+}
+
+.modal-enter-to, .modal-leave-from {
+    opacity: 1;
+    scale: 1;
+}
+
 </style>
